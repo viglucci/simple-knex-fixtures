@@ -1,0 +1,10 @@
+[
+  {
+    "table": "users",
+    "data": {
+      "id": 2,
+      "first": "jane",
+      "last": "smith"
+    }
+  }
+]
