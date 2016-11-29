@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/viglucci/knex-fixtures.svg?branch=master)](https://travis-ci.org/viglucci/knex-fixtures) [![Coverage Status](https://coveralls.io/repos/github/viglucci/knex-fixtures/badge.svg?branch=master)](https://coveralls.io/github/viglucci/knex-fixtures)
+[![Build Status](https://travis-ci.org/viglucci/simple-knex-fixtures.svg?branch=master)](https://travis-ci.org/viglucci/simple-knex-fixtures) [![Coverage Status](https://coveralls.io/repos/github/viglucci/simple-knex-fixtures/badge.svg?branch=master)](https://coveralls.io/github/viglucci/simple-knex-fixtures)
 
 simple-knex-fixtures
 ====================
