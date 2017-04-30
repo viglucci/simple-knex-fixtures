@@ -1,6 +1,6 @@
 {
   "name": "simple-knex-fixtures",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "knex fixture loader",
   "main": "index.js",
   "scripts": {
