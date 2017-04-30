@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kviglucci/knex-fixtures.git"
+    "url": "git://github.com/kviglucci/simple-knex-fixtures.git"
   },
   "bugs": {
-    "url": "https://github.com/kviglucci/knex-fixtures/issues"
+    "url": "https://github.com/kviglucci/simple-knex-fixtures/issues"
   },
   "author": "Kevin Viglucci <kviglucci@gmail.com>",
   "license": "MIT",
