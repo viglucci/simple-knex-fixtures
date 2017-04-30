@@ -29,12 +29,12 @@
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "knex": "^0.12.6",
-    "mocha": "*",
+    "mocha": "^3.3.0",
     "require-dir": "^0.3.1",
     "run-sequence": "^1.2.2",
-    "should": "*",
+    "should": "^11.2.1",
     "sinon": "^1.14.1",
-    "sqlite3": "*"
+    "sqlite3": "^3.1.8"
   },
   "repository": {
     "type": "git",
