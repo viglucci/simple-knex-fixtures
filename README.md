@@ -47,14 +47,14 @@ fixtures.loadFiles([
 
 ```javascript
 module.exports = [
-	{
-		"table": "users",
-		"data": {
-			"id": 1,
-			"first": "john",
-			"last": "doe"
-		}
-	}
+  {
+    "table": "users",
+    "data": {
+      "id": 1,
+      "first": "john",
+      "last": "doe"
+    }
+  }
 ];
 ```
 
@@ -77,10 +77,10 @@ module.exports = [
 
 ```yaml
 fixtures:
-    -
-        table: users
-        data:
-            id: 1
-            first: john
-            last: doe
+  -
+    table: users
+    data:
+      id: 1
+      first: john
+      last: doe
 ```
