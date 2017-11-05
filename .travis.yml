@@ -13,4 +13,4 @@ before_script:
 
 script: npm test
 
-after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+after_script: "cat ./coverage/lcov.info | codecov"
