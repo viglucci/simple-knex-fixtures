@@ -4,10 +4,12 @@
   "description": "knex fixture loader",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "lint:fix": "npm run lint -- --fix",
+    "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./tests/**/*.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "keywords": [
     "knex",
@@ -16,8 +18,10 @@
   "dependencies": {
     "bluebird": "^2.4.2",
     "debug": "^2.3.3",
+    "extend": "^3.0.1",
     "glob": "~7.0.5",
     "js-yaml": "~2.1.0",
+    "lodash": "^4.17.4",
     "object-assign": "^4.0.1"
   },
   "devDependencies": {
@@ -25,6 +29,10 @@
     "chai-as-promised": "^6.0.0",
     "coveralls": "^2.11.15",
     "del": "^2.2.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.0",
+    "eslint-plugin-import": "^2.8.0",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
