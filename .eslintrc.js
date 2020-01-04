@@ -49,6 +49,12 @@ module.exports = {
         ],
         "chai-friendly/no-unused-expressions": [
             "error"
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": ["./test/", "./gulp/"]
+            }
         ]
     }
 };

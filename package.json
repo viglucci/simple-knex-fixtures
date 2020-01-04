@@ -4,9 +4,9 @@
   "description": "knex fixture loader",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test",
+    "test": "mocha",
     "lint:fix": "npm run lint -- --fix",
-    "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./tests/**/*.js"
+    "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./tests/**/*.js ./gulp/**/*.js"
   },
   "engines": {
     "node": ">=6"
