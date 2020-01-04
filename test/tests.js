@@ -71,7 +71,7 @@ describe("knex-fixtures", () => {
 
             it("parses js files", () => {
                 const reader = new Reader();
-                return reader.readFile("tests/fixtures/user-fixture1.js")
+                return reader.readFile("test/fixtures/user-fixture1.js")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -87,7 +87,7 @@ describe("knex-fixtures", () => {
 
             it("parses json files", () => {
                 const reader = new Reader();
-                return reader.readFile("tests/fixtures/user-fixture1.json")
+                return reader.readFile("test/fixtures/user-fixture1.json")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -103,7 +103,7 @@ describe("knex-fixtures", () => {
 
             it("parses yaml files", () => {
                 const reader = new Reader();
-                return reader.readFile("tests/fixtures/user-fixture1.yml")
+                return reader.readFile("test/fixtures/user-fixture1.yml")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -139,7 +139,7 @@ describe("knex-fixtures", () => {
 
             it("parses js files", () => {
                 const reader = new Reader();
-                return reader.readFileGlob("tests/fixtures/user-fixture1.js")
+                return reader.readFileGlob("test/fixtures/user-fixture1.js")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -155,7 +155,7 @@ describe("knex-fixtures", () => {
 
             it("parses json files", () => {
                 const reader = new Reader();
-                return reader.readFileGlob("tests/fixtures/user-fixture1.json")
+                return reader.readFileGlob("test/fixtures/user-fixture1.json")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -171,7 +171,7 @@ describe("knex-fixtures", () => {
 
             it("parses yaml files", () => {
                 const reader = new Reader();
-                return reader.readFileGlob("tests/fixtures/user-fixture1.yml")
+                return reader.readFileGlob("test/fixtures/user-fixture1.yml")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data[0]).to.deep.equal({
@@ -187,7 +187,7 @@ describe("knex-fixtures", () => {
 
             it("concatenates fixtures", () => {
                 const reader = new Reader();
-                return reader.readFileGlob("tests/fixtures/user-fixture[1-2].json")
+                return reader.readFileGlob("test/fixtures/user-fixture[1-2].json")
                 .then((data) => {
                     expect(data).to.be.a("array");
                     expect(data.length).to.equal(2);
@@ -215,7 +215,7 @@ describe("knex-fixtures", () => {
             it("throws an error when a non array is provided", () => {
                 const reader = new Reader();
                 const fn = reader.readFiles;
-                return expect(fn("tests/fixtures/user-fixture1.js"))
+                return expect(fn("test/fixtures/user-fixture1.js"))
                 .to.eventually
                 .be.rejectedWith("readFiles expects an array")
                 .and.be.an.instanceOf(Error);
@@ -224,8 +224,8 @@ describe("knex-fixtures", () => {
             it("concatenates file results", () => {
                 const reader = new Reader();
                 return reader.readFiles([
-                    "tests/fixtures/user-fixture1.json",
-                    "tests/fixtures/user-fixture2.json"
+                    "test/fixtures/user-fixture1.json",
+                    "test/fixtures/user-fixture2.json"
                 ])
                 .then((data) => {
                     expect(data).to.be.a("array");
@@ -414,7 +414,7 @@ describe("knex-fixtures", () => {
                     first: "john",
                     last: "doe"
                 };
-                return lib.loadFile("tests/fixtures/user-fixture1.json", connection)
+                return lib.loadFile("test/fixtures/user-fixture1.json", connection)
                 .then(() => {
                     return connection
                     .select("*")
@@ -441,8 +441,8 @@ describe("knex-fixtures", () => {
                     last: "smith"
                 };
                 return lib.loadFiles([
-                    "tests/fixtures/user-fixture1.json",
-                    "tests/fixtures/user-fixture2.json"
+                    "test/fixtures/user-fixture1.json",
+                    "test/fixtures/user-fixture2.json"
                 ], connection)
                 .then(() => {
                     return connection
@@ -468,7 +468,7 @@ describe("knex-fixtures", () => {
                     first: "jane",
                     last: "smith"
                 };
-                return lib.loadFiles("tests/fixtures/user-fixture[1-2].json", connection)
+                return lib.loadFiles("test/fixtures/user-fixture[1-2].json", connection)
                 .then(() => {
                     return connection
                     .select("*")
