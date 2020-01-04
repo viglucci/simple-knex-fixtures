@@ -9,7 +9,7 @@
     "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./tests/**/*.js ./gulp/**/*.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "keywords": [
     "knex",
