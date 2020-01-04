@@ -25,21 +25,26 @@ npm test
 ### Usage
 
 ```javascript
-//connection is a intialized knex connection
+const connection = require("knex")({
+  client: "mysql",
+  connection: {
+    host : "127.0.0.1",
+    user : "your_database_user",
+    password : "your_database_password",
+    database : "myapp_test"
+  }
+});
 
-var fixtures = require("simple-knex-fixtures");
+const fixtures = require("simple-knex-fixtures");
 
-fixtures.loadFile("fixtures/file.json", connection)
-.then(somethingElse);
+await fixtures.loadFile("fixtures/file.json", connection)
 
-fixtures.loadFiles("fixtures/*.json", connection)
-.then(somethingElse);
+await fixtures.loadFiles("fixtures/*.json", connection)
 
-fixtures.loadFiles([
+await fixtures.loadFiles([
     "fixtures/file1.json",
     "fixtures/file2.json",
-], connection)
-.then(somethingElse);
+], connection);
 ```
 
 ### File formats
