@@ -53,7 +53,9 @@ module.exports = {
         "import/no-extraneous-dependencies": [
             "error",
             {
-                "devDependencies": ["./test/", "./gulp/"]
+                "devDependencies": [
+                    "test/**"
+                ]
             }
         ]
     }
