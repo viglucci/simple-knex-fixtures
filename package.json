@@ -4,7 +4,7 @@
   "description": "knex fixture loader",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "lint:fix": "npm run lint -- --fix",
     "lint": "./node_modules/.bin/eslint ./lib/**/*.js ./test/**/*.js"
   },
